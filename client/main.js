@@ -1,6 +1,8 @@
+const runApi = require("./api/runApi");
 const { app, BrowserWindow } = require("electron");
 
 const createWindow = () => {
+  runApi();
   const win = new BrowserWindow({
     width: 800,
     height: 600,
